@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Management System 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginBox">
+    <h3>Login to Rent System</h3>
+    <input type="password" id="pin" placeholder="Enter PIN">
+    <br><br>
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<div id="mainSystem" style="display:none;">
+
+<h2>RENT MANAGEMENT SYSTEM - 2026</h2>
+
+<table id="rentTable">
+<thead>
+<tr>
+<th>MONTH</th>
+<th>Agnes</th>
+<th>Julius</th>
+<th>Aserile</th>
+<th>Koffi</th>
+<th>Malong'o</th>
+<th>Imedu</th>
+<th>Tumwine</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+<tfoot>
+<tr class="summary">
+<td>SUM OF EACH</td>
+<td id="sum0"></td>
+<td id="sum1"></td>
+<td id="sum2"></td>
+<td id="sum3"></td>
+<td id="sum4"></td>
+<td id="sum5"></td>
+<td id="sum6"></td>
+</tr>
+
+<tr class="summary">
+<td colspan="7">TOTAL AMT</td>
+<td id="totalAmt"></td>
+</tr>
+
+<tr>
+<td colspan="7">EMERGENCY WITHDRAWS</td>
+<td><input type="number" id="withdraw" value="0" oninput="calculate()"></td>
+</tr>
+
+<tr class="summary">
+<td colspan="7">TOTAL BALANCE</td>
+<td id="totalBalance"></td>
+</tr>
+</tfoot>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
